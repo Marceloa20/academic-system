@@ -25,12 +25,32 @@
                     placeholder="8 dígitos numéricos" inputmode="numeric" pattern="[0-9]*" maxlength="8" required>
             </div>
 
-            <button type="submit" class="btn-acesso">Entrar</button>
+            <div class="form-grupo">
+                <label for="senha">Senha</label>
+                <input 
+                    type="password" 
+                    name="senha" 
+                    id="senha"
+                    class="input-institucional"
+                    placeholder="Informe sua senha"
+                    maxlength="8"
+                    required
+                />
+            </div>
+
+            <button 
+                type="submit" 
+                class="btn-acesso" 
+                id="btn-acesso"
+            >
+                Entrar
+            </button>
 
         </form>
     </div>
 
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./scripts/script.js"></script>
 </body>
 
