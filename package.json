@@ -1,0 +1,15 @@
+{
+  "name": "academic-system",
+  "version": "1.0.0",
+  "description": "> **Sistemas de Autenticação de Alta Performance para EdTech**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^15.14.1"
+  }
+}
