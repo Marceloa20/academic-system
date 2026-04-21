@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/cadastro.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+
+  <body>
+    <div class="container-access cadastro-container">
+      <div class="authentication-intro">
+        <h1>Crie sua Conta</h1>
+        <p>Acesse o portal com apenas alguns passos</p>
+      </div>
+
+      <form id="form-cadastro" autocomplete="off">
+        <div class="form-grupo">
+          <label for="nome">Nome Completo</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            class="input-institucional"
+            placeholder="Seu nome completo"
+            required
+          />
+        </div>
+
+        <div class="form-grupo">
+          <label for="email">E-mail Institucional</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="input-institucional"
+            placeholder="exemplo@instituicao.edu.br"
+            required
+          />
+        </div>
+
+        <div class="form-grupo">
+          <label for="senha">Definir Senha</label>
+          <div class="input-container">
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              class="input-institucional"
+              placeholder="Mínimo 8 dígitos"
+              minlength="8"
+              required
+            />
+            <i class="fa-solid fa-eye toggle-password" id="togglePassword" data-target="senha"></i>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-acesso">Criar Conta</button>
+
+        <p class="footer-text">
+          Já tem uma conta? <a href="login.html">Faça login</a>
+        </p>
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/cadastro.js"></script>
+    <script src="scripts/toogle.password.js"></script>
+  </body>
+</html>

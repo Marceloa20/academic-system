@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Acesso</title>
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/password.eye.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+    <div class="container-access">
+
+        <div class="authentication-intro">
+            <h1>Portal do Aluno</h1>
+            <p>Acesse com suas credenciais institucionais</p>
+
+        </div>
+        <form id="form-acesso" autocomplete="off">
+
+            <div class="form-grupo">
+                <label for="matricula">Matrícula (RA)</label>
+                <input type="text" id="matricula" name="matricula" class="input-institucional"
+                    placeholder="8 dígitos numéricos" inputmode="numeric" pattern="[0-9]*" maxlength="8" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" class="input-institucional"
+                    placeholder="Informe sua senha" maxlength="8" required />
+                <i class="fa-solid fa-eye" id="togglePassword"></i>
+            </div>
+
+            <button type="submit" class="btn-acesso" id="btn-acesso">
+                Entrar
+            </button>
+
+            <p class="footer-link">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/login.js"></script>
+    <script src="./scripts/toogle.password.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+:root {
+    --cor-primaria: #004a99;      
+    --cor-secundaria: #666666;    
+    --cor-fundo: #f4f7f6;          
+    --cor-branco: #ffffff;
+    --cor-erro: #d93025;           
+    --borda-padrao: #cccccc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-access {
+    background-color: var(--cor-branco);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.authentication-intro h1 {
+    font-size: 1.6rem;
+    color: var(--cor-primaria);
+    margin-bottom: 8px;
+}
+
+.authentication-intro p {
+    font-size: 0.9rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 30px;
+}
+
+.form-grupo {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.form-grupo label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    color: var(--cor-primaria);
+}
+
+.input-institucional {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--borda-padrao);
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-institucional:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(0, 74, 153, 0.1);
+}
+
+.btn-acesso {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-acesso:hover {
+    background-color: #003670;
+}
+
+.just-validate-error-label {
+    color: var(--cor-erro) !important;
+    font-size: 0.75rem !important;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.just-validate-error-field {
+    border-color: var(--cor-erro) !important;
+    background-color: rgba(217, 48, 37, 0.02); 
+}
+
+.footer-link {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: var(--cor-secundaria);
+}
+
+.footer-link a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+}
