@@ -93,7 +93,7 @@ Para navegar entre as branches e explorar as ideias em desenvolvimento:
 git branch
 
 # Para mudar para o ambiente de rascunhos/ideias
-git checkout password-field-implementatio
+git checkout password-field-implementation
 
 # Para retornar à versão principal
 git checkout main
