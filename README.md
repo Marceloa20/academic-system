@@ -25,6 +25,7 @@ O projeto foi construído sob pilares de código limpo, eficiência técnica e g
 - **Interface:** CSS3 (Flexbox/Grid/Modules)
 - **Estrutura:** HTML5 Semântico
 - **Processos:** Metodologias Ágeis e Gestão de Tarefas
+- **QA & Testing:** Cypress (End-to-End Automation)
 
 ---
 
@@ -54,6 +55,29 @@ git clone https://github.com/Marceloa20/academic-system
 cd academic-system
 
 ```
+
+## 🧪 Qualidade e Automação (Cypress)
+
+Para garantir a confiabilidade do sistema, implementamos uma camada de testes **End-to-End (E2E)** utilizando **Cypress**. Isso permite simular a jornada real do usuário e garantir que nenhuma alteração futura quebre as funcionalidades críticas.
+
+### O que já foi testado:
+  - Fluxo de Cadastro:  Verificação de presença de elementos essenciais na UI.
+  - Alternância de visibilidade de senha (ícone de visualização).
+  - Validação de formulário (bloqueio de envios inválidos).
+  - Simulação de sucesso com preenchimento de credenciais fortes e exibição de feedback via SweetAlert2.
+
+### Como instalar e rodar os testes:
+
+1. **Instale as dependências:**
+   Certifique-se de ter o Node.js instalado e rode:
+   ```bash
+   npm install
+   ```
+2. Abra a interface do Cypress:
+
+ ```bash
+ npx cypress open
+ ```
 
 ## 🌿 Gerenciamento de Branches (Git Flow)
 O projeto adota uma estratégia de versionamento para separar o ambiente de experimentação da linha de produção estável:
